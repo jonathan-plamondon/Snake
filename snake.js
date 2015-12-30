@@ -22,8 +22,8 @@ SNAKE.game = (function () {
   var apple;
   var score;
   var timeout;
-  SNAKE.width = 200;
-  SNAKE.height = 200;
+  SNAKE.width = 350;
+  SNAKE.height = 350;
   SNAKE.blockSize = 10;
   SNAKE.widthInBlocks = SNAKE.width / SNAKE.blockSize;
   SNAKE.heightInBlocks = SNAKE.height / SNAKE.blockSize;
@@ -97,7 +97,7 @@ SNAKE.game = (function () {
 
   function drawBorder() {
     ctx.save();
-    ctx.strokeStyle = 'gray';
+    ctx.strokeStyle = 'black';
     ctx.lineWidth = SNAKE.blockSize;
     ctx.lineCap = 'square';
     var offset = ctx.lineWidth / 2;
